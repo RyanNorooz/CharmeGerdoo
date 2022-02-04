@@ -1,24 +1,33 @@
 {
-  "name": "turborepo-basic-shared",
+  "name": "charmegerdoo",
   "version": "0.0.0",
   "private": true,
+  "description": "CharmeGerdoo e-commerce website project",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
     "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
     "lint": "turbo run lint",
-    "format": "prettier . --ignore-unknown --write"
+    "format": "prettier . --ignore-unknown --write",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --ignore-unknown --write"
+    ]
   },
   "devDependencies": {
+    "husky": "^7.0.4",
+    "pnpm": "^6.29.1",
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
   },
-  "packageManager": "pnpm@6.26.1"
+  "packageManager": "pnpm@6.29.1"
 }

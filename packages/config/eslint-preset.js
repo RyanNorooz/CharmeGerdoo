@@ -1,9 +1,14 @@
 module.exports = {
   root: true,
 
+  env: {
+    node: true,
+    browser: true,
+  },
+
   ignorePatterns: ['*.min.*'],
 
-  parser: '@typescript-eslint/parser',
+  // parser: '@typescript-eslint/parser',
 
   parserOptions: {
     sourceType: 'module',
@@ -35,6 +40,13 @@ module.exports = {
       rootDir: ['apps/*/', 'packages/*/'],
     },
   },
+
+  overrides: [
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      parser: '@typescript-eslint/parser',
+    },
+  ],
 
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
