@@ -7,7 +7,7 @@ Cart.layout = (page: React.ReactElement) => (
 export default function Cart() {
   return (
     <>
-      {/* <!--Section Start--> */}
+      {/* <!-- Section Start --> */}
       <div
         className="sigma_subheader style-7 bg-cover bg-center dark-overlay"
         style={{ background: "url('/img/subheader.jpg')" }}
