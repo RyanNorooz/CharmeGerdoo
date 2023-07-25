@@ -12,7 +12,7 @@
     "config": "workspace:*"
   },
   "dependencies": {
-    "@strapi/strapi": "4.0.7",
+    "@strapi/strapi": "4.10.8",
     "@strapi/plugin-users-permissions": "4.0.7",
     "@strapi/plugin-i18n": "4.0.7",
     "sqlite3": "5.0.2"
