@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "husky": "^7.0.4",
-    "pnpm": "^6.29.1",
+    "pnpm": "^7.33.4",
     "prettier": "^2.5.1",
     "turbo": "latest"
   },
